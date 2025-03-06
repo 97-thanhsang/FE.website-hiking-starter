@@ -1,1 +1,1 @@
-# FE.website-hiking-starter
+# hiking-website-starter
