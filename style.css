@@ -3,6 +3,8 @@
 /* Variables */
 /* fonts & typography */
 /* colors */
+/* breakpoints mixin */
+/* base styles */
 * {
   margin: 0;
   padding: 0;
@@ -84,10 +86,11 @@ h5 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
+/* reusable classes */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -163,12 +166,14 @@ img {
   color: hsl(0, 0%, 100%);
 }
 
+/* header styles */
 .header {
   position: fixed;
   width: 100%;
   padding: 2.4rem;
   z-index: 3;
   transition: all 0.2s ease-in-out;
+  /* .nav styles */
 }
 .header__container {
   display: flex;
@@ -242,6 +247,7 @@ img {
   max-height: 300px;
 }
 
+/* hero styles */
 .hero {
   padding: 10rem 0 5rem 0;
   display: flex;
@@ -324,4 +330,99 @@ img {
   .hero__btn {
     width: auto;
   }
+}
+
+.features {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 1200px) {
+  .features {
+    margin-top: 18rem;
+  }
+}
+.features__container {
+  padding: 6.6rem;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0px 54px 104px 0px rgba(0, 0, 0, 0.0392156863);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  .features__container {
+    gap: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .features__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.features__explore-text {
+  text-align: center;
+  margin: 3.8rem 0 2.8rem;
+  padding: 0 1rem;
+}
+.features__explore-text a {
+  color: hsl(349, 99%, 58%);
+  font-weight: 700;
+  font-style: italic;
+}
+.features__explore-text a:hover {
+  border-bottom: 2px solid hsl(349, 99%, 58%);
+}
+@media (min-width: 768px) {
+  .features__explore-text {
+    margin: 7.6rem 0 5.6rem 0;
+    padding: 0;
+  }
+}
+.features .feature {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 26.8rem;
+}
+.features .feature:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .features .feature {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.features .feature__img {
+  width: 7.6rem;
+  height: 7.6rem;
+  margin: 0 auto 2.8rem auto;
+}
+@media (min-width: 768px) {
+  .features .feature__img {
+    margin: 0 0 2.8rem 0;
+  }
+}
+.features .feature__subtitle {
+  margin-bottom: 1rem;
+}
+.features .feature__link {
+  color: hsl(349, 99%, 58%);
+}
+.features .feature__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background: transparent;
+  transition: all 0.38s ease;
+}
+.features .feature__link:hover::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 0.2rem;
+  transition: all 0.38s ease;
+  background: hsl(349, 99%, 58%);
 }/*# sourceMappingURL=style.css.map */
