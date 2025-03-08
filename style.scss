@@ -651,3 +651,117 @@ img {
     }
   }
 }
+
+// footer styles
+.footer{
+  background: $c-light-blue;
+  padding-bottom: 0;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    @include breakpoint(tablet)
+    {
+      flex-direction: row;
+
+    }
+  }
+  &__left,
+  &__right{
+    flex: 1;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include breakpoint(tablet)
+    {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include breakpoint(tablet)
+    {
+      flex-direction: row;
+      align-items: start;
+      text-align: left;
+      justify-content: space-between;
+
+    }
+  }
+  &__logo{
+    max-width: 15rem;
+    margin-bottom: 1.6rem;
+    
+  }
+  &__subtitle{
+    max-width: 34rem;
+    margin-bottom: 4.8rem;
+    @include breakpoint(desktop)
+    {
+      font-size: 2rem;
+    }
+  }
+  .social{
+    display: flex;
+    gap: 3rem;
+    &__link{
+      width: 4.8rem;
+      height: 4.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: $c-white;
+      background: $c-blue;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        background: darken($color: $c-blue, $amount: 10%);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &__icon{
+      font-size: 3rem;
+    }
+  }
+  &__info
+  {
+    margin-bottom: 6rem;
+    @include breakpoint(tablet)
+    {
+      margin-bottom: 0;
+    }
+    h5{
+      margin-bottom: 3rem;
+    }
+    ul{
+      li:not(:last-child){
+        margin-bottom: 2.4rem;
+      }
+      a{
+        color: $c-grey-blue;
+        &:hover{
+          color: $c-blue;
+        }
+      }
+    }
+  }
+  &__copyright{
+    text-align: center;
+    padding: 4.8rem 0;
+    @include breakpoint(tablet)
+    {
+      margin-top: 6rem;
+    }
+    @include breakpoint(desktop)
+    {
+      margin-top: 12rem;
+    }
+  }
+}

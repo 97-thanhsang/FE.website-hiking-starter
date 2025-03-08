@@ -618,4 +618,117 @@ img {
 }
 .newsletter .form__btn {
   font-weight: 400;
+}
+
+.footer {
+  background: hsl(218, 100%, 96%);
+  padding-bottom: 0;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+  }
+}
+.footer__left, .footer__right {
+  flex: 1;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__left {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__right {
+    flex-direction: row;
+    align-items: start;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+.footer__logo {
+  max-width: 15rem;
+  margin-bottom: 1.6rem;
+}
+.footer__subtitle {
+  max-width: 34rem;
+  margin-bottom: 4.8rem;
+}
+@media (min-width: 1200px) {
+  .footer__subtitle {
+    font-size: 2rem;
+  }
+}
+.footer .social {
+  display: flex;
+  gap: 3rem;
+}
+.footer .social__link {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(219, 97%, 62%);
+  transition: all 0.3s ease-in-out;
+}
+.footer .social__link:hover {
+  background: #0e61fb;
+  transition: all 0.3s ease-in-out;
+}
+.footer .social__icon {
+  font-size: 3rem;
+}
+.footer__info {
+  margin-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .footer__info {
+    margin-bottom: 0;
+  }
+}
+.footer__info h5 {
+  margin-bottom: 3rem;
+}
+.footer__info ul li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.footer__info ul a {
+  color: hsl(227, 9%, 40%);
+}
+.footer__info ul a:hover {
+  color: hsl(219, 97%, 62%);
+}
+.footer__copyright {
+  text-align: center;
+  padding: 4.8rem 0;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    margin-top: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__copyright {
+    margin-top: 12rem;
+  }
 }/*# sourceMappingURL=style.css.map */
