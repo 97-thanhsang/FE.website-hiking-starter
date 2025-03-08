@@ -49,23 +49,23 @@ const sr = ScrollReveal({
   reset:true
 });
 
-// sr.reveal(`
-//   .hero__title, 
-//   .features__container, 
-//   .companies__pretitle, 
-//   .companies__title, 
-//   .testimonials__pretitle, 
-//   .testimonials__title,
-//   .newsletter__container,
-//   .footer__container
-//   `);
-// sr.reveal('.hero__subtitle', {delay: 500});
-// sr.reveal('.hero__btn', {delay: 600});
-// sr.reveal('.hero__img', {delay: 600, origin:'bottom'});
-// sr.reveal('.feature', {interval:'100'});
-// sr.reveal('.feature__explore-text', {delay:600,origin:'bottom'});
-// sr.reveal('.section-primary__img', {origin:'left'});
-// sr.reveal('.section-primary__text', {origin:'right'});
-// sr.reveal('.brands__item', {interval: '100'});
-// sr.reveal('.slider', {interval: '100'});
-// sr.reveal('.footer__copyright', {delay: 200, origin:'top'});
+sr.reveal(`
+  .hero__title, 
+  .features__container, 
+  .companies__pretitle, 
+  .companies__title, 
+  .testimonials__pretitle, 
+  .testimonials__title,
+  .newsletter__container,
+  .footer__container
+  `);
+sr.reveal('.hero__subtitle', {delay: 500});
+sr.reveal('.hero__btn', {delay: 600});
+sr.reveal('.hero__img', {delay: 600, origin:'bottom'});
+sr.reveal('.feature', {interval:'100'});
+sr.reveal('.feature__explore-text', {delay:600,origin:'bottom'});
+sr.reveal('.section-primary__img', {origin:'left'});
+sr.reveal('.section-primary__text', {origin:'right'});
+sr.reveal('.brands__item', {interval: '100'});
+sr.reveal('.slider', {interval: '100'});
+sr.reveal('.footer__copyright', {delay: 200, origin:'top'});
