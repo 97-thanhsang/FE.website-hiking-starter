@@ -561,4 +561,61 @@ img {
 }
 .testimonials .slider__client-stars {
   color: hsl(45, 100%, 48%);
+}
+
+.newsletter {
+  background: hsl(218, 100%, 96%);
+  text-align: center;
+}
+.newsletter__title {
+  margin-bottom: 3rem;
+}
+.newsletter__subtitle {
+  max-width: 63.7rem;
+  margin: 0 auto 7.6rem auto;
+}
+.newsletter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 63.7rem;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .newsletter .form {
+    flex-direction: row;
+  }
+}
+.newsletter .form__input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.newsletter .form__icon {
+  position: absolute;
+  font-size: 2.6rem;
+  margin-left: 2.4rem;
+  color: hsl(219, 97%, 62%);
+}
+.newsletter .form__input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background: none;
+  border: 1px solid hsl(219, 97%, 62%);
+  padding-left: 6rem;
+  font-size: 1.6rem;
+  outline: none;
+  color: hsl(219, 97%, 62%);
+  border-radius: 3rem;
+  height: 6.2rem;
+}
+.newsletter .form__input::-moz-placeholder {
+  color: hsl(219, 97%, 62%);
+}
+.newsletter .form__input::placeholder {
+  color: hsl(219, 97%, 62%);
+}
+.newsletter .form__btn {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
