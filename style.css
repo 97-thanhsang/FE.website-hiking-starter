@@ -521,4 +521,44 @@ img {
   .companies .brands {
     gap: 8rem;
   }
+}
+
+.testimonials h3,
+.testimonials .pretitle {
+  text-align: center;
+}
+.testimonials h3 {
+  margin-bottom: 5.2rem;
+}
+.testimonials .slider__item {
+  background: url("assets/img/testimonial-texture.svg"), hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 5.2rem 5.7re;
+  border-radius: 140px 0;
+  border: 1px solid #ebf2ff;
+}
+@media (min-width: 768px) {
+  .testimonials .slider__item {
+    max-width: 72.6rem;
+  }
+}
+.testimonials .slider__client-img {
+  width: 10.4rem;
+  height: 10.4rem;
+  margin-bottom: 2rem;
+}
+.testimonials .slider__client-name {
+  margin: 0.4rem;
+}
+.testimonials .slider__client-type {
+  color: hsl(349, 99%, 58%);
+  margin-bottom: 2rem;
+}
+.testimonials .slider__client-message {
+  margin-bottom: 1.2rem;
+}
+.testimonials .slider__client-stars {
+  color: hsl(45, 100%, 48%);
 }/*# sourceMappingURL=style.css.map */

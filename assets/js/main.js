@@ -21,5 +21,23 @@ window.addEventListener('scroll', function() {
 });
 
 // Initialize Swiper
+let swiper = new Swiper('.slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el : '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints:{
+    320:{
+      slidesPerView: 1,
+      spaceBetween: 50,
 
+    },
+    768:{
+      slidesPerView:2,
+      spaceBetween:50
+    }
+  }
+});
 // Scroll Reveal
